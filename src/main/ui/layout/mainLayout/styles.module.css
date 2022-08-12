@@ -1,0 +1,27 @@
+.layout {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "sidebar header header"
+    "sidebar context context"
+    "sidebar context context"
+    ;
+    grid-template-rows: 80px 1fr 1fr;
+    grid-template-columns: 300px 1fr 1fr;
+    gap: 1rem;
+}
+
+.header {
+    grid-area: header;
+    background-color: black;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: yellow;
+}
+
+.context {
+    grid-area: context;
+    background-color: pink;
+}
